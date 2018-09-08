@@ -1,0 +1,17 @@
+{
+  "name": "hdp-Stream-Camera",
+  "version": "0.0.1",
+  "description": "this plugin help you to capture frames from camera at run time",
+  "cordova": {
+    "id": "hdp-Stream-Camera",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "hdp",
+  "license": "ISC"
+}

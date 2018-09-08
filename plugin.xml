@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="hdp-Stream-Camera" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>StreamCamera</name>
+	<js-module name="StreamCamera" src="www/StreamCamera.js">
+		<clobbers target="cordova.plugins.StreamCamera" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="StreamCamera">
+				<param name="android-package" value="hdp.StreamCamera.StreamCamera" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml">
+			<uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.CAMERA" />
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		</config-file>
+		<source-file src="src/android/hdp/StreamCamera/StreamCamera.java" target-dir="src/hdp/StreamCamera" />
+	</platform>
+</plugin>
